@@ -7,6 +7,12 @@
         font-size: 1.5rem;
     }  
     header img {
+        box-shadow: 0 0 30px black;
         float: right;
+        border-radius: 0 10px 0 0;
     }
+    header,
+footer {
+    border-radius: 15px;
+}
 }
