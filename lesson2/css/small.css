@@ -1,0 +1,12 @@
+* { -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; box-sizing: 
+    border-box;}
+    
+    html {-webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;}
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: .8rem;
+    }
