@@ -27,7 +27,7 @@
         font-size: 1.5rem;
         margin: 0;
     }
-    h2 {
+    .whitespace, .rep, .alignment h2 {
         font-family: 'Open Sans', sans-serif;
         text-align: center;
         border-bottom: 1px solid;
