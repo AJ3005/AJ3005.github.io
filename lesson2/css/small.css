@@ -38,18 +38,18 @@ footer {
     padding: 1em;
 }
 
-.alignment img {
+section.alignment img {
     width: 30%;
     height: 30%;
 }
 
-.rep img {
+section.rep img {
     width: 30%;
     height: 30%;
 
 }
 
-.whitespace img {
+section.whitespace img {
     width: 30%;
     height: 30%;
 }
