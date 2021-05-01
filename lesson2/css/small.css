@@ -10,3 +10,46 @@
         grid-template-columns: 1fr;
         font-size: .8rem;
     }
+
+    body {
+        max-width: 750px;
+        font-size: 16px;
+        justify-content: flex-start;
+        margin: 50px auto;
+    }
+    h1 {
+        text-align: center;
+        color: rgb(43, 10, 161);
+        font-family: 'Krona One','Open Sans', sans-serif;
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        border-bottom: 1px solid;
+        font-size: 1rem;
+    }
+
+    header,
+footer {
+    text-align: center;
+    background-color: gray;
+    margin: 1.5rem;
+    padding: 1em;
+}
+
+.alignment img {
+    width: auto;
+    height: auto;
+}
+
+.rep img {
+    width: auto;
+    height: auto;
+
+}
+
+.whitespace img {
+    width: auto;
+    height: auto;
+}
