@@ -62,7 +62,18 @@ footer {
     overflow: hidden;
 }
 
- img {
+.rep img {
     width: 90%;
     border: crimson;
 }
+
+.alignment img {
+    width: 90%;
+    border: crimson;
+}
+
+.whitespace img {
+    width: 90%;
+    border: crimson;
+}
+
