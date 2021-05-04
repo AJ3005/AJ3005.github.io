@@ -33,7 +33,7 @@
         border-bottom: 1px solid;
         font-size: 1rem;
         margin: 0;
-        background-color: rgb(114, 114, 108);
+        background-color: rgb(189, 189, 180);
     border: darkslategray;
     border-radius: 1em;
     overflow: hidden;
@@ -69,5 +69,5 @@ footer {
 }
 
 .whitespace a {
-    color: floralwhite;
+    color: darkslategray;
 }
