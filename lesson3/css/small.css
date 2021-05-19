@@ -17,7 +17,7 @@ header {
     padding: .5rem 2%;
     background-color: rgb(143, 14, 126);
 }
-header img{float: left; margin-right: 10px; width: 90%;}
+header img{float: left; margin-right: 10px; width: 90%; height: auto;}
 header h1 {margin: 0; font-size: 1.3rem; font-family: Georgia, serif;}
 header h2 {margin: 0; font-weight: normal; font-size: 1rem; font-family: Georgia, serif;}
 
@@ -53,6 +53,10 @@ nav ul li.active a {
 main {
     padding: 0 2%;
     min-height: 10rem;
+}
+main img {
+    width: 50%;
+    height: auto;
 }
 
 

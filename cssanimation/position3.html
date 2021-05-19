@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+  position: relative;
+  animation-name: example;
+  animation-duration: 8s;
+  animation-delay: -2s;
+}
+
+@keyframes example {
+  0%   {background-color:purple; left:0px; top:0px;}
+  25%  {background-color:gray; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:purple; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b>animation-delay can also hold negative values, which can make it seem like an animation has already been in motion.
+<br><br></p>
+
+<div></div>
+
+</body>
+</html>
