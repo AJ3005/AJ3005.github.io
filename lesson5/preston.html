@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Assignment">
+    <meta name="author" content="Austin Jordan">
+    <title>Windy Decisions</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <script src="js/scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script defer src="js/banner.js"></script>
+  </head>
+
+  <body>
+    <div id="asideWrapper">
+      <aside id="banner">
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
+        park pavilion.
+      </aside>
+    </div>
+    <div id="headerWrapper">
+      <header class="clearfix">
+        <img src="images/logo.png" alt="Weather logo" />
+        <div class="headings">
+          <h1>News that BLEW in</h1>
+          <h2>Windy Decisions</h2>
+        </div>
+      </header>
+    </div>
+
+    <div id="navWrapper">
+      <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+          <li><a href="#">Home</a></li>
+          <li class="active"><a href="preston.html">Preston</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li><a href="#">Storm Center</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    
+    <main>
+      <h1>Preston</h1>
+      <section>
+        <div class="heroparent">
+          <img src="images/preston.jpeg" alt="Mountain View" />
+          <div class="heroparent">
+            <p>Weather Summary</p>
+            <ul>
+              <li>Currently: Partly cloudy</li>
+              <li>High: 46&deg F</li>
+              <li>Wind Chill: -1&degF</li>
+              <li>Humidity: 88%</li>
+              <li>Wind Speed: 15 MPH</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="forcast">
+        <div>
+          <h3>Monday</h3>
+          <img src="images/rain.png" alt="rain" />
+          <p>46&deg;</p>
+        </div>
+        <div>
+          <h3>Tuesday</h3>
+          <img src="images/rain.png" alt="rain" />
+          <p>35&deg;</p>
+        </div>
+        <div>
+          <h3>Wednesday</h3>
+          <img src="images/partlycloudy.png" alt="cloud" />
+          <p>54&deg;</p>
+        </div>
+        <div>
+          <h3>Thursday</h3>
+          <img src="images/partlycloudy.png" alt="cloud" />
+          <p>56&deg;</p>
+        </div>
+        <div>
+          <h3>Friday</h3>
+          <img src="images/sunny.png" alt="sun" />
+          <p>67&deg;</p>
+        </div>
+      </section>
+      <div>Contact Us with an address and map will end up here.</div>
+    </main>
+
+    
+    <div id="footerPlace">
+      <footer>
+        <p id="copy"></p>
+        <p id="updated"></p>
+    </footer>
+    </div>
+  </body>
+</html>
