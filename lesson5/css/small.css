@@ -27,7 +27,8 @@
   
   
   div#headerWrapper {
-    background-color: #e0fbfc;
+    background-color: #000;
+    color: #ee6c4d;
   }
   
   header {
@@ -65,7 +66,7 @@
     background-color: transparent;
     border: 2px;
     font-size: 1.6rem;
-    color: #e0fbfc;
+    color: #f0e6c7;
   }
   
   nav ul {
@@ -81,7 +82,7 @@
   
   nav ul li a {
     display: block;
-    color: #e0fbfc;
+    color: #f0e6c7;
     padding: 0.5rem 0;
     text-decoration: none;
     font-size: 0.9rem;
@@ -100,7 +101,7 @@
   
   
   main div {
-    background-color: #e0fbfc;
+    background-color: #f0e6c7;
     margin-top: 0.5rem;
     padding: 1rem;
   }
@@ -131,7 +132,7 @@
   }
   
   footer {
-    color: #e0fbfc;
+    color: #f0e6c7;
     padding: 0.5rem 2%;
     text-align: center;
   }
