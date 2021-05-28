@@ -1,15 +1,26 @@
-let lastUpdate = document.lastModified;
-var d = new Date();
-var n = d.getFullYear();
-function lastUpdated() {
-  document.getElementById("updated").innerHTML="Last Updated: " + lastUpdate;
-  document.getElementById("copy").innerHTML= "©" + n + " | Austin Jordan";
-}
-function callFuncts() {
-  lastUpdated();
-}
+document.getElementById("mybtn").addEventListener("click", function() {
+    let chapterinput = document.getElementById("chapter").value;
 
-function toggleMenu() {
-  console.log(document.getElementById("primaryNav").classList);
-  document.getElementById("primaryNav").classList.toggle("hide");
-}
+    if (chapterinput !=="") {
+        const newBTN = document.createElement("button");
+        newBTN.innerHTML = "\u274C";
+
+        const newLI = document.createElement("li");
+        newLI.textContent = chapterinput;
+        newLI.appendChild(newBTN);
+
+        document.getElementById("mylist").appendChild(newLI);
+
+        document.getElementById("chapter").value = "";
+
+        newBTN.addEventListener("click", function() {
+            document.getElementById("mylist").removeChild(newLI);
+        });
+    }
+
+    
+
+});
+
+focus();
+
