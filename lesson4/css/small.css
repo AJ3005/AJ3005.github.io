@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    color: #22181C;
+    color: white;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -50,9 +50,7 @@ header h2 {
     color: #00d4b5;
 }
 
-nav {
 
-}
 
 ul {
     list-style-type: none;
