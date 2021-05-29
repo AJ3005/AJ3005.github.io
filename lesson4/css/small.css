@@ -99,10 +99,6 @@ nav button:hover, nav ul li a:hover {
 
 }
 
-footer {
-
-}
-
 footer div {
     display: flex;   
     justify-content: space-around; 
