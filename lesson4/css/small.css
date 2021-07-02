@@ -30,8 +30,15 @@ header {
     background-color: #F6E8EA;
 }
 
+header h2, h3 {
+    color: white;
+    background-color: none;
+    
+}
+
 header div {
     grid-template-columns: 60px auto;
+
 }
 
 header img {
