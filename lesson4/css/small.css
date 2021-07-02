@@ -31,7 +31,6 @@ header {
 }
 
 header div {
-    display: grid;
     grid-template-columns: 60px auto;
 }
 
