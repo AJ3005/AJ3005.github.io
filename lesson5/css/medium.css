@@ -12,6 +12,17 @@
       margin-left: 1%;
   }
   
+  .square img {
+      height: 50px;
+      width: 50px;
+      display: block;
+      margin: 0px auto 0px auto;
+  }
+  
+  .square p {
+      text-align: center;
+  }
+  
   .hide2 {
       display: block;
   }
@@ -20,6 +31,25 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
       grid-gap: 10px;
+  }
+  
+  article {
+      display: grid;
+      grid-template: 1fr 1fr/1fr 1fr;
+      margin-top: 40px;
+  }
+  
+  article h2 {
+      grid-area: 1/1/2/2;
+  }
+  
+  article p {
+      grid-area: 2/1/3/2;
+  }
+  
+  article img {
+      grid-area: 1/2/3/3;
+      padding-bottom: 30px;
   }
   
   .contact {
@@ -44,5 +74,4 @@
       grid-area: 1/3/3/4;
   }
   
-  }
-  
+}

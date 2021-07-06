@@ -1,28 +1,25 @@
+
 let lastUpdate = document.lastModified;
 var d = new Date();
 var n = d.getFullYear();
 function lastUpdated() {
   document.getElementById("updated").innerHTML="Last Updated: " + lastUpdate;
-  document.getElementById("copy").innerHTML= "©" + n + " | Austin Jordan";
+  document.getElementById("copy").innerHTML= "©" + n + " | Caleb D. Holland";
 }
 
+function fribanner() {
+  var day=new Date();
+  var now=day.getDay();
+  if (now==5) {
+    document.getElementById("date").classList="today";
+  }
+}
 
 function callFuncts() {
   lastUpdated();
+  fribanner();
 }
 
 function toggleMenu() {
-  console.log(document.getElementById("primaryNav").classList);
   document.getElementById("primaryNav").classList.toggle("hide");
-}
-
-const dayNumber = today.getDay();
-const element = document.getElementById("message");
-console.log(dayNumber);
-if (dayNumber == 5) {
-    element.classList.add("showme");
-}
-
-else {
-    element.classList.add("hideme");
 }
