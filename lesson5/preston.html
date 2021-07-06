@@ -4,24 +4,27 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Assignment">
-        <meta name="author" content="Caleb Holland">
-        <title>Weather in Preston</title>
+        <meta name="author" content="Austin Jordan">
+        <title>Title</title>
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/small.css" rel="stylesheet">
         <link href="css/medium.css" rel="stylesheet">
         <link href="css/large.css" rel="stylesheet">
+        <script src="js/scripts.js"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    
       </head>
       <body onload="callFuncts()">
           <div id="content">
-            <aside id="date" class="nottoday">Saturday - Preston Pancakes in the Park! <br>9:00 AM Saturday at the city park.</aside>
             <header>
-                <img src="images/logo.png" alt="logo">
-                <h1>Oh No, Weather!</h1>
-                <h3>Prepare For The Worst</h3>
+                <img src="images/logo.jpg" alt="logo" width="55" height="55">
+                <div>
+                <h2>Windy Decisions</h2>
+                <h3>News that BLEW in</h3>
+                </div>
                 </header>
-            <nav class="green" id="menubar">
+            <nav class="green">
                 <button onclick="toggleMenu()">&#9776; MENU</button>
                 <ul id="primaryNav" class="hide">
                    <li><a href="#">Home</a></li>
@@ -33,56 +36,54 @@
                 </ul>
             </nav>
             <main>
-                <h1 class="green">Preston</h1>
-                <section id="herobox">
-                    <ul id="summary">
+                <h1>Preston</h1>
+                <section class="green">
+                    <ul>
                         <li>Weather Summary</li>
-                        <li>Currently: Sunny</li>
-                        <li>High: 76 °F</li>
-                        <li>Wind Chill: 75 °F</li>
-                        <li>Humidity: 69%</li>
-                        <li>Wind speed: 5 MPH</li>
+                        <li>High: xx</li>
+                        <li>Low: xx</li>
+                        <li>Wind: xx</li>
                     </ul>
                     <img src="images/preston.jpg" alt="Hero Image">
                 </section>
-                <h2 class="hide2" id="green1">Five-Day Forecast</h2>
+                <h2 class="hide2">Five-Day Forecast</h2>
                 <section id="forecast">
                  <div class="square" id="s1">
                     <h3 class="square">Day</h3>
-                    <img src="images/sunny.png" alt="Sunny">
-                    <p>High Temp: 76°</p>
+                    <img src="images/sunny.png" alt="sunny">
+                    <p>High Temp: </p>
                     </div>
                  <div class="square" id="s2">
                     <h3 class="square">Day</h3>
-                    <img src="images/partlycloudy.png" alt="Partly Cloudy">
-                    <p>High Temp: 67°</p>
+                    <img src="images/sunny.png" alt="sunny">
+                    <p>High Temp: </p>
                     </div>
                  <div class="square" id="s3">
                     <h3 class="square">Day</h3>
-                    <img src="images/rainy.png" alt="Rainy">
-                    <p>High Temp: 65°</p>
+                    <img src="images/sunny.png" alt="sunny">
+                    <p>High Temp: </p>
                     </div>
                  <div class="square" id="s4">
                     <h3 class="square">Day</h3>
                     <img src="images/sunny.png" alt="sunny">
-                    <p>High Temp: 70°</p>
+                    <p>High Temp: </p>
                     </div>
                  <div class="square" id="s5">
                     <h3 class="square">Day</h3>
                     <img src="images/sunny.png" alt="sunny">
-                    <p>High Temp: 77°</p>
+                    <p>High Temp: </p>
                     </div>
                 </section>
                 <article class="green">
-                    <img src="images/granicus.jpg" alt="Battle of Granicus River map">
-                    <h2>On This Day</h2>
-                    <p>On this day in history, 334 BC, The Macedonian army of Alexander the Great
-                        defeated Darius III of Persia in the Battle of the Granicus River.
-                        <a href="https://www.onthisday.com/events/may/22" class="green">Source: onthisday.com</a>
+                    <h2>Crash blocking US-91 south of Idaho Falls</h2>
+                    <p>A crash blocked a section of U.S. Highway 91 between Idaho Falls and Shelley Tuesday morning. 
+                        The crash happened around 8:15 a.m. just south of the highway’s intersection with West 65th South.
+                        <a href="https://www.newsbreak.com/news/2301237821866/crash-blocking-us-91-south-of-idaho-falls">Source: News Break</a>
                     </p>
+                    <img src="images/prestoncrash.jpg" alt="related article image">
                 </article>
                 <section>
-                    <h2 class="green">Contact Us</h2>
+                    <h2>Contact Us</h2>
                     <div class="contact">
                         <ul class="c1">
                             <li>Address:</li>
@@ -98,7 +99,7 @@
                             <li>Email:</li>
                             <li>contact@ohnoweather.com</li>
                         </ul>
-                        <img class="c4" src="images/prestonmap.jpg" alt="google map of the town embedded
+                        <img class="c4" src="images/googlepreston.jpg" alt="google map of the town embedded
                     using an iframe">
                     </div>
                 </section>
@@ -110,6 +111,5 @@
                 </div>
             </footer>
           </div>
-          <script src="js/scripts.js"></script>
       </body>
 </html>
