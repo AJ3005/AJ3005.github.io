@@ -4,7 +4,7 @@ var d = new Date();
 var n = d.getFullYear();
 function lastUpdated() {
   document.getElementById("updated").innerHTML="Last Updated: " + lastUpdate;
-  document.getElementById("copy").innerHTML= "©" + n + " | Caleb D. Holland";
+  document.getElementById("copy").innerHTML= "©" + n + " | Austin Jordan";
 }
 
 function fribanner() {
