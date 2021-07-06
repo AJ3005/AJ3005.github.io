@@ -6,20 +6,23 @@ function lastUpdated() {
   document.getElementById("copy").innerHTML= "©" + n + " | Austin Jordan";
 }
 
-function fribanner() {
-  var day=new Date();
-  var now=day.getDay();
-  if (now==5) {
-    document.getElementById("date").classList="today";
-  }
-}
 
 function callFuncts() {
   lastUpdated();
-  fribanner();
 }
 
 function toggleMenu() {
   console.log(document.getElementById("primaryNav").classList);
   document.getElementById("primaryNav").classList.toggle("hide");
+}
+
+const dayNumber = today.getDay();
+const element = document.getElementById("message");
+console.log(dayNumber);
+if (dayNumber == 5) {
+    element.classList.add("showme");
+}
+
+else {
+    element.classList.add("hideme");
 }
