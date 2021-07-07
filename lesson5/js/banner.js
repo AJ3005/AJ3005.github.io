@@ -1,4 +1,3 @@
-
-if (thedate.getDay() == 4) {
-    document.querySelector("#banner").style.display = "block";
-  }
+if (thedate.getDay() == 5) {
+  document.querySelector("#banner").style.display = "block";
+}
