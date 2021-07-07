@@ -1,77 +1,108 @@
-@media only screen and (min-width: 560px) {
+@media only screen and (min-width: 35rem) {
+  /*----------- BODY --------------*/
 
-  .square {
-      border-radius: 0px;
-      display: block;
-      width: 100%;
+  /*----------- HEADER --------------*/
+  header img {
+    width: 75px;
   }
-  
-  .square h3 {
-      border: none;
-      width: 94%;
-      margin-left: 1%;
+
+  header h1 {
+    font-size: 1.6rem;
   }
-  
-  .square img {
-      height: 50px;
-      width: 50px;
-      display: block;
-      margin: 0px auto 0px auto;
+
+  header h2 {
+    font-size: 1rem;
   }
-  
-  .square p {
-      text-align: center;
+
+  /*----------- NAVIGATION --------------*/
+  nav button {
+    display: none;
   }
-  
-  .hide2 {
-      display: block;
+
+  nav ul.hide {
+    display: block;
   }
-  
-  #forecast {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-gap: 10px;
+
+  nav ul li {
+    float: left;
   }
-  
-  article {
-      display: grid;
-      grid-template: 1fr 1fr/1fr 1fr;
-      margin-top: 40px;
+
+  nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 0.8rem 1rem;
   }
-  
-  article h2 {
-      grid-area: 1/1/2/2;
+
+  /*----------- MAIN --------------*/
+  body main div h1 {
+    font-size: 3rem;
   }
-  
-  article p {
-      grid-area: 2/1/3/2;
+
+  main div h2,
+  section.article h2,
+  main h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
   }
-  
-  article img {
-      grid-area: 1/2/3/3;
-      padding-bottom: 30px;
+
+  main p {
+    font-size: 1.6rem;
   }
-  
-  .contact {
-      display: grid;
-      grid-template: 1fr 1fr/1fr 1fr 1fr;
+
+  .heroparent {
+    position: relative;
   }
-  
-  .c1 {
-      grid-area: 1/1/3/2;
+
+  .herochild {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
   }
-  
-  .c2 {
-      grid-area: 1/2/2/3;
+
+  div.forcastWrapper {
+    display: block;
   }
-  
-  .c3 {
-      grid-area: 2/2/3/3;
-  
+
+  section.forcast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
-  
-  .c4 {
-      grid-area: 1/3/3/4;
+
+  section.forcast div {
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 0;
   }
-  
+
+  section.forcast p {
+    font-size: 1.2rem;
+  }
+
+  section.article img {
+    float: right;
+    width: 264px;
+    height: auto;
+    margin: 25px 2% 5px 5px;
+  }
+
+  .contactus {
+    font-size: 1.2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .contactus p {
+    font-size: 1rem;
+  }
+
+  .localmap {
+    display: block;
+    padding: 0;
+  }
+
+  /*----------- FOOTER --------------*/
+  footer {
+    padding: 1rem 2%;
+    font-size: 1.5rem;
+  }
 }
