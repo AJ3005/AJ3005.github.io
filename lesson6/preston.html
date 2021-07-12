@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta
       name="description"
-      content="Weather site design."
+      content="Check the weather."
     />
     <meta name="author" content="Austin Jordan" />
 
@@ -17,11 +17,15 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
+
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!--
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,100;1,400&display=swap"
       rel="stylesheet"
     />
+    -->
 
     <!-- STYLE SHEETS -->
     <link href="css/normalize.css" rel="stylesheet" />
@@ -35,6 +39,7 @@
     <!-- JAVASCRIPTS-->
     <script defer src="js/style.js"></script>
     <script defer src="js/banner.js"></script>
+    <script defer src="js/windchill.js"></script>
   </head>
 
   <body>
@@ -51,7 +56,7 @@
         <img src="images/logo.jpg" alt="Weather logo" />
         <div class="headings">
           <h1>Windy Decisions</h1>
-          <h2>News That Blew in!</h2>
+          <h2>News that BLEW In!</h2>
         </div>
       </header>
     </div>
@@ -76,18 +81,25 @@
       <h1>Preston Idaho</h1>
       <section>
         <div class="heroparent">
-          <img
-            src="images/preston.jpg"
-            alt="Preston, Idaho"
-          />
+          <picture>
+            <source
+              media="(max-width: 500px)"
+              srcset="images/franklin500.jpg"
+            />
+            <source
+              media="(max-width: 800px)"
+              srcset="images/franklin800.jpg"
+            />
+            <img src="images/franklinOriginal.jpg" alt="Preston, Idaho" />
+          </picture>
           <div class="herochild">
-            <h3>Weather Summary</h3>
+            <h2>Weather Summary</h2>
             <ul>
               <li>Currently: Sunny</li>
-              <li>High: 76&deg F</li>
-              <li>Wind Chill: &degF</li>
+              <li>High: <span id="temperature">50</span>&deg;F</li>
+              <li>Wind Chill: <span id="chill"></span>&deg;F</li>
               <li>Humidity: 69%</li>
-              <li>Wind Speed: 5 MPH</li>
+              <li>Wind Speed: <span id="windspeed">50</span> mph</li>
             </ul>
           </div>
         </div>
@@ -98,37 +110,37 @@
           <div>
             <h3>Monday</h3>
             <img src="images/rain.png" alt="rain" width="300" height="200" />
-            <p>60&deg;</p>
+            <h4>60&deg;</h4>
           </div>
           <div>
             <h3>Tuesday</h3>
-            <img src="images/partlycloudy.png" alt="rain" />
-            <p>71&deg;</p>
+            <img src="images/partlycloudy.png" alt="partlycloudy" />
+            <h4>71&deg;</h4>
           </div>
           <div>
             <h3>Wednesday</h3>
-            <img src="images/sunny.png" alt="rain" />
-            <p>85&deg;</p>
+            <img src="images/sunny.png" alt="sunny" />
+            <h4>85&deg;</h4>
           </div>
           <div>
             <h3>Thursday</h3>
-            <img src="images/sunny.png" alt="rain" />
-            <p>81&deg;</p>
+            <img src="images/sunny.png" alt="sunny" />
+            <h4>81&deg;</h4>
           </div>
           <div>
             <h3>Friday</h3>
             <img src="images/rain.png" alt="rain" />
-            <p>1&deg;</p>
+            <h4>1&deg;</h4>
           </div>
         </section>
       </div>
       <section class="article">
         <div>
-          <h2>Article Title</h2>
+          
           <img
             class="top"
             src="images/prestoncrash.jpg"
-            alt="Preston Crash"
+            alt="Preston Map"
             width="500"
             height="333"
           />
@@ -138,6 +150,7 @@
                         The crash happened around 8:15 a.m. just south of the highway’s intersection with West 65th South.
                         <a href="https://www.newsbreak.com/news/2301237821866/crash-blocking-us-91-south-of-idaho-falls">Source: News Break</a>
           </p>
+          
         </div>
       </section>
       <div>
@@ -156,6 +169,7 @@
           <div>
             <h3>Phone:</h3>
             <p>(801) 555-1234</p>
+            <br />
             <h3>Email:</h3>
             <p>contact@windydecisions.com</p>
           </div>
@@ -175,5 +189,10 @@
     <div id="footerWrapper">
       <footer><span id="currentDate"></span></footer>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({ google: { families: ["Lato"] } });
+    </script>
   </body>
 </html>

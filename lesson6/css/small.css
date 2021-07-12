@@ -1,5 +1,5 @@
 
-*{
+* {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -117,8 +117,12 @@ main div {
   padding: 1rem;
 }
 
+.broke {
+  max-width: 100%;
+}
+
 .heroparent {
-  position: unset;
+  padding: 0;
 }
 
 .herochild {
@@ -152,6 +156,14 @@ section div img {
   height: auto;
 }
 
+.top {
+  display: none;
+}
+
+.bottom {
+  display: block;
+}
+
 .contactus img {
   width: 100%;
   height: auto;
@@ -165,11 +177,11 @@ section div img {
 }
 
 .contactus h3 {
-  margin: 0rem;
+  margin: 2% 0;
 }
 
 .contactus p {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   margin: 0;
 }
 
