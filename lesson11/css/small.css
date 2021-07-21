@@ -216,9 +216,9 @@
     border: none;
   }
   
-   img .top {
+  section div img {
     display: grid;
-    width: 30%;
+    width: 100%;
     height: auto;
   }
   
