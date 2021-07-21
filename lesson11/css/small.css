@@ -216,7 +216,7 @@
     border: none;
   }
   
-  section div img .top {
+   img .top {
     display: grid;
     width: 30%;
     height: auto;
