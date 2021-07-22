@@ -68,10 +68,17 @@
     <main>
       <h1>Home</h1>
       <div class="heroWrapper">
-        <img
-          class="indexhero"
-          src="images/indexhero.jpg"
-          alt="Wide view of a beauful lake with the mountain reflection."
+        <picture>
+            <source
+              media="(max-width: 500px)"
+              srcset="images/indexhero500.jpg"
+            />
+            <source
+              media="(max-width: 800px)"
+              srcset="images/indexhero800.jpg"
+            />
+            <img src="images/indexhero1100.jpg" alt="index pic" />
+          </picture>
         />
       </div>
       <div class="card"></div>
@@ -81,8 +88,8 @@
           <div>
             <img
               class="homearticleimage"
-              src="images/river.jpg"
-              alt="A small river coming from a plush area."
+              src="images/prestoncrash.jpg"
+              alt="crash."
             />
             
                 <h2>Crash blocking US-91 south of Idaho Falls</h2>
