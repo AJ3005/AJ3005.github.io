@@ -1,0 +1,310 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  /*----------- apply a natural box layout model to all elements --------------*/
+  
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  
+  /*----------- BODY --------------*/
+  body {
+    min-height: 100%;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  /*----------- HEADER --------------*/
+  
+  header {
+    padding: 3rem 3%;
+    background-color: #9ec1a3;
+  }
+  
+  header img {
+    width: 100px;
+    float: left;
+    padding-right: 10px;
+  }
+  
+  /*----------- NAVIGATION --------------*/
+  
+  nav button {
+    width: 100%;
+    border: none;
+    color: #1f363d;
+    background-color: #cfe0c3;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: #1f363d;
+    background-color: #70a9a1;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  nav ul li.active a {
+    background-color: #cfe0c3;
+    color: #1f363d;
+    border-style: ridge;
+    border-color: #1f363d;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  /*----------- MAIN --------------*/
+  
+  main {
+    width: 100%;
+    min-height: 297px !important;
+    min-height: 10rem;
+    display: block;
+    line-height: 1.5rem;
+  }
+  
+  main h1 {
+    padding-top: 10px;
+    padding-left: 43%;
+  }
+  
+  main picture img {
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  main h2,
+  h3 {
+    text-align: center;
+  }
+  
+  div,
+  .city h2,
+  .city h3 {
+    width: 100%;
+    height: auto;
+    margin: -4px;
+    padding: 0;
+  }
+  
+  .chamber {
+    padding: 0px 1rem 1rem 1.3rem;
+    text-align: justify;
+  }
+  
+  .logo {
+    display: block;
+    height: 130px;
+    margin: auto;
+    border: 1px solid #808080;
+  }
+  
+  #photo1 {
+    height: 130px;
+    float: right;
+    margin: 0 0 0 15px;
+  }
+  
+  #photo2 {
+    height: 130px;
+    float: left;
+    margin: 0 15px 0 0;
+  }
+  
+  #photo3 {
+    height: 130px;
+    float: right;
+    margin: 0 0 0 15px;
+  }
+  
+  .member {
+    padding: 0px 1rem 1rem 1.3rem;
+    text-align: justify;
+  }
+  
+  #forecast {
+    display: block;
+  }
+  
+  .grid-col {
+    width: 280px;
+    height: auto;
+    background-color: #70a9a1;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .col-head {
+    margin: 2px 0px 2px 2px;
+  }
+  
+  .shop {
+    display: none;
+  }
+  
+  .contact_info {
+    width: 100%;
+    padding: 25px 0px 10px 0px;
+    font-size: 18px;
+    line-height: 0.7rem;
+    background-color: #70a9a1;
+  }
+  
+  .contact {
+    padding: 0px 1rem 1rem 1.3rem;
+    text-align: justify;
+  }
+  
+  .mapouter {
+    margin: auto;
+    border: 1px solid #000;
+  }
+  
+  #social {
+    grid-column: 2;
+    padding-bottom: 5px;
+  }
+  
+  .info {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 3.5rem;
+  }
+  
+  #events {
+    text-align: center;
+  }
+  
+  form fieldset {
+    width: 250px;
+    height: auto;
+    margin: 3rem auto;
+    background-color: #9ec1a3;
+  }
+  
+  form label.field {
+    display: block;
+  }
+  
+  form label.field input,
+  form label.field select {
+    width: 100%;
+  }
+  
+  form label.field input:required {
+    border-left: 5px solid #ba324f;
+  }
+  
+  legend {
+    font-size: 20px;
+  }
+  
+  label datalist {
+    padding: 5rem;
+  }
+  
+  textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  .btn {
+    margin: 20px 0px 20px 60px;
+    padding: 10px 70px;
+    font-size: 16px;
+    background-color: #fff;
+  }
+  
+  .contact_btn {
+    margin: 20px 0px 20px 60px;
+    padding: 10px 70px;
+    font-size: 16px;
+    background-color: #fff;
+  }
+  
+  dl {
+    margin-right: 1rem;
+  }
+  
+  dt {
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .policy {
+    padding: 0px 1rem 1rem 1.3rem;
+    text-align: justify;
+  }
+  
+  /*----------- DIRECTORY --------------*/
+  
+  .board {
+    margin: auto;
+  }
+  
+  .outer_div {
+    justify-items: center;
+  }
+  
+  .hide_class {
+    display: none;
+  }
+  
+  .inner_div_grid {
+    display: grid;
+    line-height: 1.5rem;
+    padding-left: 30px;
+    text-align: center;
+  }
+  
+  .inner_div_list {
+    display: grid;
+    line-height: 1.5rem;
+    padding-left: 30px;
+    text-align: center;
+  }
+  
+  /*----------- FOOTER --------------*/
+  footer {
+    background-color: #9fc7a5;
+    width: 100%;
+    padding: 0.5rem;
+    padding-right: unset;
+    text-align: center;
+  }
+  
+  footer p {
+    text-align: center;
+  }
+  
+  /*----- Clearfix: Force an Element not to collapse -----*/
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media only screen and (min-width: 360px) {
+    form fieldset {
+      width: 350px;
+    }
+  }
+  
