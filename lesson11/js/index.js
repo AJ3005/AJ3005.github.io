@@ -11,8 +11,8 @@ fetch(requestURL)
       (town) =>
         town.name == "Preston" ||
         town.name == "Soda Springs" ||
-        town.name == "Fish Haven" ||
-    );
+        town.name == "Fish Haven"
+ ;
 
     sitetown.forEach((town) => {
       let card = document.createElement("section");
