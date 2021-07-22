@@ -98,8 +98,8 @@
     section.article img.top {
       float: right;
       width: 264px;
-      height: auto;
-      margin: 2px 5% 5px 5px;
+      height: 130px;
+      margin: -8px 1% 5px 5px;
     }
   
     .eventBox,
