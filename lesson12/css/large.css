@@ -1,0 +1,146 @@
+/* Desktop*/
+@media only screen and (min-width: 1025px) {
+
+    /*----------- BODY --------------*/
+    header,
+    nav,
+    main,
+    footer {
+      width: 100% !important;
+      margin: 0;
+    }
+  
+    /*----------- NAVIGATION --------------*/
+  
+    nav ul {
+      margin: 0;
+    }
+  
+    nav ul li {
+      flex-basis: auto;
+      -ms-flex: 0 0 auto;
+      flex: auto;
+    }
+  
+    nav ul li a {
+      padding: 0.5rem 1rem;
+    }
+  
+    nav button {
+      display: none;
+    }
+  
+    /*----------- MAIN --------------*/
+  
+    .principal {
+      padding-top: unset;
+    }
+  
+    main h1 {
+      padding-top: 20px;
+      padding-left: 43%;
+    }
+  
+    .logo {
+      width: 10%;
+    }
+  
+    #forecast {
+      margin: auto;
+  
+    }
+  
+    .grid-col {
+      width: 350px;
+      font-size: 18px;
+      margin-bottom: 30px;
+      ;
+    }
+  
+    .col-head {
+      padding-top: 10px;
+  
+    }
+  
+    .city {
+      width: 90%;
+      margin-left: 5rem;
+      display: grid;
+      grid-template-columns: 30% 30% 30%;
+      grid-gap: 15px;
+    }
+  
+    div .cityinfo {
+      padding-top: 20px;
+    }
+  
+    .info {
+      font-size: 25px;
+      line-height: 6rem;
+    }
+  
+    div#message {
+      height: 6rem;
+    }
+  
+    legend {
+      font-size: 30px;
+    }
+  
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  
+    .column {
+      grid-column-start: 2;
+    }
+  
+    .shop {
+      display: block;
+      margin: 40px auto;
+    }
+  
+    .partners {
+      grid-gap: 150px;
+    }
+  
+    .contact_info {
+      font-size: 20px;
+    }
+  
+    .hide_class {
+      display: block;
+    }
+  
+    /*----------- DIRECTORY --------------*/
+  
+    .btn_direct {
+      width: 20%;
+      margin-left: 40%;
+    }
+  
+    .inner_div_grid {
+      grid-template-rows: 25px 25px 25px 25px 25px;
+      line-height: 1.5rem;
+      padding-left: 60px;
+      text-align: left;
+      border: 1px solid black;
+    }
+  
+    #directory_info {
+      padding-left: 60px;
+    }
+  
+    .inner_div_list {
+      gap: 60px;
+      grid-template-columns: 220px 130px 130px 180px 150px;
+      line-height: 1.5rem;
+      padding-left: 40px;
+      text-align: left;
+      font-size: 18px;
+    }
+  }
+  
+  /* end of media query */
+  

@@ -1,0 +1,208 @@
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    /*----------- HEADER --------------*/
+  
+    Header img {
+      width: 80px;
+      margin-right: 10px;
+    }
+  
+    /*----------- NAVIGATION --------------*/
+  
+    nav ul li a {
+      padding: 0.5rem 1rem;
+      font-size: 0.9em;
+    }
+  
+    nav button {
+      display: none;
+    }
+  
+    nav ul li.active a {
+      border-style: ridge;
+      border-color: #175676;
+      color: #000;
+    }
+  
+    #navigation {
+      display: flex;
+      text-align: center;
+    }
+  
+    #navigation li {
+      display: block;
+      flex: 1 1 100%;
+    }
+  
+    /*----------- MAIN --------------*/
+  
+    main h1 {
+      padding-top: 10px;
+      padding-left: 38%;
+    }
+  
+    main div {
+      margin: 0;
+    }
+  
+    #forecast {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(6rem, 30%));
+      grid-gap: 10px;
+    }
+  
+    .grid-col {
+      width: 230px;
+      text-align: center;
+      line-height: 1.5rem;
+      margin-left: 40px;
+      padding-top: 5px;
+    }
+  
+    section {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  
+    .shop {
+      display: block;
+      margin: 40px auto;
+    }
+  
+    .partners {
+      display: flex;
+      justify-content: center;
+      grid-gap: 20px;
+    }
+  
+    .contact_info {
+      height: auto;
+      font-size: 16px;
+      display: flex;
+    }
+  
+    .board {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-row-gap: 20px;
+      justify-items: center;
+    }
+  
+    .info {
+      font-size: 14px;
+      line-height: 3rem;
+    }
+  
+    .chamber {
+      display: block;
+      font-size: 18px;
+      margin-left: 1%;
+      margin-right: 2%;
+    }
+  
+    .logo {
+      width: 20%;
+      height: auto;
+      float: right;
+      margin: 0 5px 0 15px;
+    }
+  
+    #photo1 {
+      height: 250px;
+    }
+  
+    #photo2 {
+      height: 250px;
+    }
+  
+    #photo3 {
+      height: 250px;
+    }
+    dt {
+      text-align: left;
+      margin-left: 2.5rem;
+    }
+  
+    .display_here div section {
+      height: 220px;
+    }
+  
+    .display_here div img {
+      height: 220px;
+    }
+  
+    .gmap_canvas {
+      margin-bottom: 30px;
+    }
+  
+    /*----------- DIRECTORY --------------*/
+  
+    .btn_direct {
+      width: 35%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-left: 16rem;
+      margin-bottom: 4rem;
+    }
+  
+    #btn_extra {
+      padding: 10px 20px;
+      background: #70a9a1;
+      font-size: 18px;
+    }
+  
+    .hide_class {
+      display: block;
+    }
+  
+    .box:hover {
+      width: 175px;
+      box-shadow: 5px 5px 10px 5px #40798c;
+    }
+  
+    .inner_div_grid {
+      display: grid;
+      line-height: 1.5rem;
+      padding-left: 30px;
+      grid-template-rows: 25px 25px 25px 25px 25px;
+      text-align: left;
+      border: 1px solid black;
+    }
+  
+    #directory_info {
+      display: grid;
+      padding-left: 20px;
+      grid-column-gap: 40px;
+      padding-right: 20px;
+    }
+  
+    .directory_info_row {
+      grid-template-columns: auto auto;
+    }
+  
+    .inner_div_list {
+      display: grid;
+      grid-template-columns: 160px 110px 100px 180px 150px;
+      gap: 4px;
+      line-height: 1rem;
+      font-size: 12px;
+      padding-left: 20px;
+      text-align: left;
+    }
+  
+    /* iPad Pro */
+    @media only screen and (min-width: 1024px) {
+      #forecast {
+        margin-left: 40px;
+      }
+  
+      .btn_direct {
+        margin-left: 20rem;
+      }
+    }
+  }
