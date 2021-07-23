@@ -22,7 +22,7 @@ html {
   
   header {
     padding: 3rem 3%;
-    background-color: #9ec1a3;
+    background-color: #b3ddf2;
   }
   
   header img {
@@ -36,7 +36,7 @@ html {
   nav button {
     width: 100%;
     border: none;
-    color: #1f363d;
+    color: #d90429;
     background-color: #cfe0c3;
     text-decoration: none;
     font-size: 1.5rem;
@@ -53,7 +53,7 @@ html {
   nav ul li a {
     display: block;
     color: #1f363d;
-    background-color: #70a9a1;
+    background-color: #edf2f4;
     text-align: center;
     text-decoration: none;
     font-size: 1.2rem;
@@ -61,9 +61,9 @@ html {
   
   nav ul li.active a {
     background-color: #cfe0c3;
-    color: #1f363d;
+    color: #173741;
     border-style: ridge;
-    border-color: #1f363d;
+    border-color: #062e3a;
   }
   
   .hide {
@@ -146,7 +146,7 @@ html {
   .grid-col {
     width: 280px;
     height: auto;
-    background-color: #70a9a1;
+    background-color: #b3ddf2;
     margin: auto;
     text-align: center;
   }
@@ -164,7 +164,7 @@ html {
     padding: 25px 0px 10px 0px;
     font-size: 18px;
     line-height: 0.7rem;
-    background-color: #70a9a1;
+    background-color: #ff0000;
   }
   
   .contact {
@@ -196,7 +196,7 @@ html {
     width: 250px;
     height: auto;
     margin: 3rem auto;
-    background-color: #9ec1a3;
+    background-color: #b3ddf2;
   }
   
   form label.field {
@@ -285,7 +285,7 @@ html {
   
   /*----------- FOOTER --------------*/
   footer {
-    background-color: #9fc7a5;
+    background-color: #b3ddf2;
     width: 100%;
     padding: 0.5rem;
     padding-right: unset;

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="WDD230 Week12" />
+    <meta name="author" content="Austin Jordan" />
+
+    <!-- This start file was build by Paul Cheney  -->
+    <title>Final Project: Chamber of Commerce</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta
+      name="viewport"
+      content="width=device-width , initial-scale=1, maximum-scale=1"
+    />
+
+    <!-- STYLE SHEETS -->
+    <link rel="city icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet" />
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet" />
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- HEADER HERE -->
+    <header class="clearfix">
+      <img src="images/logo_icon_128px.jpg" alt="icon" />
+    </header>
+
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul id="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="chi.html">Chicagoland</a></li>
+        <li><a href="membership.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- CONTENT HERE -->
+    <main>
+      <picture class="hero">
+        <source
+          media="(max-width: 400px)"
+          srcset="images/hero_img_500.jpg"
+          class="hero_one"
+        />
+        <source
+          media="(max-width: 1000px)"
+          srcset="images/hero_img_800.jpg"
+          class="hero_one"
+        />
+        <source
+          media="(min-width: 1001px)"
+          srcset="images/hero_img_800.jpg"
+          class="hero_one"
+        />
+        <img
+          src="images/hero_img_original.jpg"
+          class="hero_one"
+          alt="Main Photo"
+        />
+      </picture>
+
+      <article>
+        <aside class="chamber">
+          <br />
+          <h2>The History of Chicago.</h2>
+          <img
+            src="images/historical_photo.jpg"
+            alt="historical_photo"
+            id="photo1"
+          />
+          <p>
+            Chicago was incorporated as a town in 1833 and as a city in 1837, when its population reached 4,000. In 1848 Chicago got its first telegraph and railroad. Two innovations—grain elevators and the Board of Trade’s wheat grading standards—quickly transformed the way crops were sold. By 1854 the city was the world’s largest grain port and had more than 30,000 residents, many of them European immigrants.
+          </p>
+          <p>
+            The 2000 U.S. Census reported Chicago’s first decade-over-decade population increase since 1950. Immigrants still flock to the “windy city,” though now from Asia and Latin America more than Europe. Chicago remains a center of trade: Airports supplement the old rail and water transit hubs, and agricultural futures are traded electronically from the floor of its storied Mercantile Exchange.
+          </p>
+          <br /><br />
+          <h2>Demography</h2>
+          <img
+            src="images/country_photo.jpg"
+            alt="chi_photo"
+            id="photo2"
+          />
+          <p>
+            Chicago's demographics show that it is a large and ethnically diverse metropolis. It is the third largest city and metropolitan area in the United States by population, and the city was home to over 2.6 million people in 2019, accounting for over 25% of the population in the Chicago metropolitan area; home to approximately 9.4 million. The racial makeup of the city in 2010 was 45.3% white (31.7% non-Hispanic white), 32% black, 5% Asian, and 3% from two or more races. The ethnic makeup of the population is 28% Hispanic and 72% belong to non Hispanic background. English is the primary language of the city, and Christianity accounts as the predominant faith.
+          </p>
+          <p>
+            As of the 2010 United States Census, there were 2,695,598 people and 1,194,337 households residing within the city limits of Chicago. More than half the population of the state of Illinois lives in the Chicago metropolitan area. The 2000 United States Census had shown the population density of the city itself was 12,750.3 people per square mile (4,923.0/km2), making it one of the nation's most densely populated cities. There were 1,152,868 housing units at an average density of 5,075.8 per square mile (1,959.8/km2). Of the 1,061,928 households in the 2000 census, 28.9% had children under the age of 18 living with them, 35.1% were married couples living together, 18.9% had a female householder with no husband present, and 40.4% were non-families. The median income for a household in the city was $38,625 in 2000, and the median income for a family was $46,748. Males had a median income of $35,907 versus $30,536 for females. Below the poverty line were 19.6% of the population and 16.6% of the families.
+          </p>
+          <br /><br />
+          <h2>Things to See in the Windy City</h2>
+          <img src="images/chi_photo.jpg" alt="country_photo" id="photo3" />
+          <p>
+            There's a Chicago Architecture River Cruise where you can Get views of Chicago’s most famous buildings, as well as insider info from an expert guide, on this architecture-focused cruise. See all the most important buildings on one tour, a hard-to-accomplish task on foot. View the skyline from the Chicago River while listening to live commentary. Snap photos of the Willis (Sears) Tower, Old Post Office, 360 Chicago Observation Deck, Wrigley Building, and more.
+
+          </p>
+          <p>
+            Chicago Favorites Ultimate Food & Walking Tour Combines tastes of Chicago's most famous foods with stops at local must-see landmarks on a single tour. Instead of spending the day chasing down these foods and highlights on your own, save valuable vacation time by leaving the navigation to someone else. Learn all you ever wanted to know about Chicago's history, both architectural and culinary, through guide commentary over the course of a 1.5-mile (2.4-kilometer) walk.
+
+
+
+          </p>
+        </aside>
+      </article>
+      <br /><br />
+      <div>
+        <h2>Upcoming Events</h2>
+        <div id="events"></div>
+      </div>
+    </main>
+    <!-- FOOTER HERE -->
+    <footer>
+      <div class="contact_info">
+        <div>
+          <img src="images/pin_postal_icon.png" alt="icon_address" />
+          <p>410 North Michigan Avenue,</p>
+          <p>Chicago, IL 60611</p>
+        </div>
+        <div>
+          <img src="images/phone_icon_64px.png" alt="icon_phone" />
+          <p>+1-767-444-5567</p>
+        </div>
+        <div>
+          <img src="images/email_icon_64px.png" alt="icon_email" />
+          <p>contact@clchamber.com</p>
+        </div>
+        <div id="social">
+          <img src="images/facebook img.png" alt="icon_facebook" />
+          <img src="images/instagram img.png" alt="icon_instagram" />
+          <img src="images/Twitter_icon.jpg" alt="icon_twitter" />
+        </div>
+      </div>
+      <p>© <label id="year"></label>Chicago Land Chamber of Commerce</p>
+      <p>Business Hours: 8AM - 4PM</p>
+      <p>
+        <span>All Rights Reserved | </span>
+        
+        <a href="attribution.html">Attributions</a>
+      </p>
+      <p>&nbsp; <span id="currentDate"></span></p>
+      <p>Last visited <span id="lastDate">0</span> days ago</p>
+    </footer>
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/forecast.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({ google: { families: ["Roboto"] } });
+    </script>
+  </body>
+</html>
